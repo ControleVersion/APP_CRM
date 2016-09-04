@@ -65,7 +65,7 @@ require 'connect.class.php';
             $conn  = array();
             $stmt = array();
             $executa = array();
-		echo '<script> window.location.href="../login.php";</script>';
+		echo '<script> window.location.href="../login.php?msg='.base64_encode("Erro ao tentar se conectar...").'";</script>';
 	
 	}
 	

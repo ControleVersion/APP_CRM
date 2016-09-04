@@ -1,4 +1,12 @@
 <?php
+session_start();
+if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+{
+	unset($_SESSION['login']);
+	unset($_SESSION['senha']);
+	echo '<script> window.location.href="../login.php";</script>';
+	header('location: ../login.php');
+}
 header('Content-type: text/html; charset=utf-8');
 
 //forcar mostrar todos os erros

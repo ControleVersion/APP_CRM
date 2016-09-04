@@ -54,11 +54,11 @@ $logado = $_SESSION['login'];
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CRM</a>
+          <a class="navbar-brand" href="index.php">CRM</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-      			<li class="active"><a href="#">Inicio</a></li>
+      			<li class="active"><a href="index.php">Inicio</a></li>
       			<li class="dropdown">
       				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastrar <span class="caret"></span></a>
         			<ul class="dropdown-menu">
@@ -74,15 +74,7 @@ $logado = $_SESSION['login'];
     			<?php } ?>
     		</ul>
           
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" name="filtrar01" id="filtrar01" placeholder="Pesquisar" class="form-control">
-            </div>
-            
-            <button type="button" id="search" class="btn btn-warning">
-                 <i class="glyphicon glyphicon-search"></i> 
-            </button>
-          </form>
+          
         </div><!--/.navbar-collapse -->
       </div>
     </nav>

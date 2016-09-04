@@ -11,7 +11,22 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
+        
+        <div class="row">
+            <div class="col-md-12">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" name="filtrar01" id="filtrar01" placeholder="Pesquisar" class="form-control">
+                    </div>
+            
+                    <button type="button" id="search" class="btn btn-warning">
+                        <i class="glyphicon glyphicon-search"></i> 
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-12">
+                
+                  <!-- Example row of columns -->
     	<div class="table-responsive" data-example-id="hoverable-table"> 
     		<table class="table table-hover"> 
     			<thead> 
@@ -61,6 +76,15 @@
     			</tbody> 
     		</table> 
     	</div>
+                
+            </div> <!-- FIM DO BLOCO 2 -->
+        </div>
+        
+        
+        
+        
+        
+    
 
       <hr>
 

@@ -349,7 +349,7 @@ label:hover:before {
 	  'btn-success': '<i class="fa fa-check"></i>',
 	  'btn-error': '<i class="fa fa-remove"></i>',
 	  'msg-success': 'Conectado! Redirecionando...',
-	  'msg-error': 'Wrong login credentials!',
+	  'msg-error': 'Erro ao tentar se conectar...',
 	  'useAJAX': true,
   };
 
@@ -383,7 +383,12 @@ label:hover:before {
   */	
 	
 
-
+<?php
+ if(isset($_GET['msg']) && base64_decode($_GET['msg']) == "Erro ao tentar se conectar..." ){
+ 		echo "$('#login-form').find('[type=submit]').addClass('error').html(options['btn-error']);".
+  			"$('#login-form').find('.login-form-main-message').addClass('show error').html(options['msg-error']);";
+ }
+?>
 	// Loading
 	//----------------------------------------------
   function remove_loading($form)
